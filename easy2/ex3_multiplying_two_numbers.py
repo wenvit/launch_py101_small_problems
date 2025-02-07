@@ -20,9 +20,6 @@
 # -5, 3 --> -15
 # 0, 8 --> 0
 
-# data structure
-# float
-
 # algorithm
 # 1. Define function `multiply` with two parameters `num1` and `num2`
 # 2. Return `num1 * num2`
