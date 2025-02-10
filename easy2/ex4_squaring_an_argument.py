@@ -36,16 +36,13 @@
 # type function: cubed, to the 4th power, to the 5th, etc. 
 # How would we go about doing so while still using the multiply function?
 
-# 1. Define function `power` with parameters `num` and `n`
-# 2. Initialize `result` variable to return value of invoking
-#    `multiply` passing `number` and `number` as arguments
-# 3. for` loop to iterate over range from 1 to `n`
-#    with each iteration, invoke `multiply` with argument 
-# if n = 0, return 1
-# if n = 1, return number
-# if n >= 1
-#    result = multiply(number, number)  # if n == 2 stop
-#    multiply(result, number)
+# 1. Define function `power` with parameters `number` and `n`
+# 2. Handle power of 0 with conditional: `if n == 0: return 1`
+# 3. else, initialize `result` by setting to `number`
+# 4. `for` loop to iterate over range from 1 to `n`
+#    with each iteration, invoke `multiply` passing arguments
+#    `result` and `number` and reassign `result` to returned value
+# 5. return `result`
 
 def multiply(num1, num2):
     return num1 * num2
@@ -66,3 +63,4 @@ print(power(2, 0))
 print(power(4, 1))
 print(power(5, 5))
 print(power(-5, 5))
+print(power(2, 8))
